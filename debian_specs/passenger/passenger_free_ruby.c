@@ -2,7 +2,7 @@
  * This is a simple program for executing either the 'ruby' command in PATH,
  * or one of the Ruby versions installable by APT. This is necessary because
  * Debian 6 and Debian 8 (among others) do not install /usr/bin/ruby upon
- * installing one of the versioned Ruby packages (e.g. apt-get install ruby2.1).
+ * installing one of the versioned Ruby packages (e.g. apt-get install ruby2.3).
  * Commands such as 'passenger' are supposed to be runnable under any Ruby
  * interpreter the user desires, including non-APT-installed Rubies, but we can't
  * just set the shebang line to '#!/usr/bin/env ruby'. This problem is solved by

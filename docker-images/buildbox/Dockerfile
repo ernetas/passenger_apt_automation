@@ -1,3 +1,3 @@
-FROM phusion/baseimage:0.9.16
+FROM registry.example.com/base:xenial
 ADD . /paa_build
 RUN bash /paa_build/install.sh

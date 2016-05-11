@@ -7,8 +7,10 @@ when :ubuntu
     ruby_dependencies = "ruby1.9.1, ruby1.9.1-dev, ruby2.0, ruby2.0-dev"
   elsif is_distribution?("<= utopic")
     ruby_dependencies = "ruby2.0, ruby2.0-dev, ruby2.1, ruby2.1-dev"
+  elsif is_distribution?("<= xenial")
+    ruby_dependencies = "ruby2.3, ruby2.3-dev"
   else
-    ruby_dependencies = "ruby2.1, ruby2.1-dev"
+    ruby_dependencies = "ruby2.3, ruby2.3-dev"
   end
 when :debian
   if is_distribution?("<= wheezy")
